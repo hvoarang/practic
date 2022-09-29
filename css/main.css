@@ -49,6 +49,8 @@ body {
 }
 
 body {
+  width: 100%;
+  height: 100%;
   background-color: #b2b2c6;
 }
 
@@ -63,9 +65,15 @@ ul {
 
 .container {
   width: 1600px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 10%;
 }
 
 .box__row {
+  position: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

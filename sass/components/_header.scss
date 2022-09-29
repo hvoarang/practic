@@ -1,5 +1,6 @@
 body {
-  
+  width: 100%;
+    height: 100%;
   background-color: #b2b2c6;
 }
 li {
@@ -10,12 +11,18 @@ ul {
   padding: 0px  10px 0px 0px;
   margin: 10px;
 }
+
 .container {
-  
   width: 1600px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 10%;
 }
 
 .box__row {
+  position: center;
   display: flex;
   background-color:#464f48;
 }
