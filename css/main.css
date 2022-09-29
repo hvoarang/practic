@@ -73,6 +73,7 @@ ul {
 }
 
 .box__row {
+  border-radius: 50px;
   position: center;
   display: -webkit-box;
   display: -ms-flexbox;
