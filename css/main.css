@@ -73,7 +73,7 @@ ul {
 }
 
 .box__row {
-  border-radius: 50px;
+  border-radius: 160px;
   position: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,6 +130,8 @@ ul {
 }
 
 .b {
+  -webkit-animation: animate125 3000ms infinite 1000ms;
+          animation: animate125 3000ms infinite 1000ms;
   background-color: #4caf50;
   -webkit-box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -164,11 +166,13 @@ ul {
 }
 
 .a1 {
+  -webkit-animation: animate125 3000ms infinite 1000ms;
+          animation: animate125 3000ms infinite 1000ms;
   background-color: #137408;
   -webkit-box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
+  -webkit-transform: 2500ms rotate(5deg);
+          transform: 2500ms rotate(5deg);
 }
 .a1:hover, .a1:focus, .a1::after {
   color: rgba(229, 255, 0, 0.5);
@@ -199,6 +203,8 @@ ul {
 }
 
 .c1 {
+  -webkit-animation: animate125 3000ms infinite 1000ms;
+          animation: animate125 3000ms infinite 1000ms;
   background-color: #13a0a0;
   -webkit-box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -213,4 +219,34 @@ ul {
   scale: 0.9;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+}
+
+@-webkit-keyframes animate125 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animate125 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }/*# sourceMappingURL=main.css.map */

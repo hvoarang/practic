@@ -22,7 +22,7 @@ ul {
 }
 
 .box__row {
-  border-radius: 50px;
+  border-radius: 160px;
   position: center;
   display: flex;
   background-color:#464f48;
@@ -72,6 +72,7 @@ ul {
 }
 
 .b {
+  animation: animate125 3000ms infinite 1000ms;
   background-color: #4caf50;
   &:hover,
   &:focus,
@@ -110,7 +111,7 @@ ul {
 }
 
 .a1 {
-  
+  animation: animate125 3000ms infinite 1000ms;
   background-color: #137408;
   &:hover,
   &:focus,
@@ -120,7 +121,7 @@ ul {
   }
   box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-        transform: rotate(5deg);
+        transform:2500ms rotate(5deg);
     
         &:hover,
         &::before {
@@ -150,6 +151,7 @@ ul {
 }
 
 .c1 {
+  animation: animate125 3000ms infinite 1000ms;
   background-color: #13a0a0;
   &:hover,
   &:focus,
@@ -158,12 +160,25 @@ ul {
     background-color: rgba(186, 32, 32, 0.5);
   }
   box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-        transform: rotate(5deg);
-    
-        &:hover,
-        &::before {
+  0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  transform: rotate(5deg);
+  
+  &:hover,
+  &::before {
           scale: (0.90);
           transform: rotate(0deg);
         }
+}
+@keyframes animate125 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
