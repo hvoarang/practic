@@ -249,4 +249,23 @@ ul {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+}
+.contacts__link {
+  color: #757572;
+  padding: 10px;
+}
+.contacts__icon {
+  fill: #040000;
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: #570b0b;
 }/*# sourceMappingURL=main.css.map */

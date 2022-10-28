@@ -1,34 +1,83 @@
-<!DOCTYPE html>
-<html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>practic</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
-    />
-
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
-
-  <body class="body">
+<!-- header -->
+<div class="header__hero-background">
+  <header class="header">
     <div class="container">
-      <ul class="box__row">
-        <li class="box a">1</li>
-        <li class="box b">2</li>
-        <li class="box c">3</li>
-        <li class="box a1">4</li>
-        <li class="box b1">5</li>
-        <li class="box c1">6</li>
+      <nav class="nav__bar">
+        <!-- logo -->
+
+        <a class="logo" href="./index.html">
+          <img src="./photo/hero/logo.png" alt="ice logo" />
+        </a>
+
+        <!-- burger menu -->
+
+        <button
+          class="menu__btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu__btn--icon" width="32" height="32">
+            <use href="./svg/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <!-- buy button -->
+
+        <button type="button" class="hero__btn btn" data-modal-open>
+          Buy now
+          <img
+            width="4"
+            height="8"
+            class="hero__btn--icon"
+            src="./photo/hero/arrow-right.png"
+            alt="button buy"
+          />
+        </button>
+      </nav>
+
+      <!-- hero title -->
+
+      <h1 class="hero__title">
+        ice cream <span class="hero__title-first">made with</span>
+        <span class="hero__title-span">passion</span>
+      </h1>
+
+      <!-- hero link (Products & How it’s made?)-->
+
+      <ul class="hero__links">
+        <li class="hero__item">
+          <a href="#" class="hero__link">Products</a>
+        </li>
+        <li class="hero__item">
+          <a href="#" class="hero__link-made">How it’s made?</a>
+        </li>
       </ul>
+
+      <!-- icecream img -->
+
+      <!-- <picture class="hero__img">
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/work/work-1_desk.webp    1x,
+            ./images/work/work-1_desk@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1200px)"
+          srcset="./photo/hero/icecream@m1x 1x, ./photo/hero/icecream@m2x 2x"
+          type="image/jpg"
+        />
+        <img
+          src="./images/work/work-1_desk.jpg"
+          alt="Фахівець пише код"
+          width="370"
+          height="294"
+          loading="lazy"
+        />
+      </picture> -->
     </div>
-  </body>
-</html>
+  </header>
+</div>
